@@ -5,57 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoyalBlood</title>
-    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    <div class="gridContainerC"></div>  
-        <div class="item1C">
-            <header>
-                    <h3>CONTACT ROYAL BLOOD</h3>
-                <nav>
-                    <ul class="menu">
-                        <li> <a href="https://www.youtube.com/c/royalblooduk/videos"target="_blank">watch</a></li>
-                        <li> <a href="./listen.html">listen</a></li>
-                        <li> <a href="./merch.html">merch</a></li>
-                        <li> <a href="./tour.html">tour</a></li>
-                        <li> <a href="./contact.html">contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <div class="item2C">
-            <main>
-                <div class="containerForm">
-                    <div class="infoForm">
-                        <h2>Contact</h2>
-                        <p>Consult for Live Shows, TV, Radio or Streaming programs, 
-                        for interviews or audiovisual content... 🇬🇧
-                        <br>
-                        Consulte por contrataciones 
-                        en Vivo, programas de TV, Radio o Streamings, 
-                        por entrevistas o contenido audiovisual del medio... 🇪🇸</p>
-                        <a href="#"> <i class="fa fa-phone"></i>343-298-7750 📞</a>
-                        <a href="#"> <i class="fa fa-envelope"></i>royalblooduk@musicuk.com 📧</a>
-                        <a href="#"> <i class="fa fa-map-marked"></i>London, United Kingdom 🌎</a>
-                    </div>
-                    <form action="" autocomplete="off">
-                        <input type="text" name="name" placeholder="your name..." class="campo">
-                        <input type="email" name="email" placeholder="youremail@gmail.com..." class="campo">
-                        <textarea name="msg" placeholder="your message..."></textarea>
-                        <input type="submit" name="send" value="send message" class="btnEnviar">
-                    </form>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid bg-light">
+              <a class="navbar-brand" href="./index copy.html">ROYAL BLOOD</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item bg-light">
+                    <a class="nav-link active" aria-current="page" href="https://www.youtube.com/c/royalblooduk/videos"target="_blank">WATCH</a>
+                  </li>
+                  <li class="nav-item bg-light">
+                    <a class="nav-link" href="./listen.html">LISTEN</a>
+                  </li>
+                  <li class="nav-item bg-light">
+                    <a class="nav-link" href="./merch.html">MERCH</a>
+                  </li>
+                  <li class="nav-item bg-light">
+                    <a class="nav-link" href="./tour.html">TOUR</a>
+                  </li>
+                  <li class="nav-item bg-light">
+                    <a class="nav-link" href="./contact copy.html">CONTACT</a>
+                  </li>
+                </ul>
+                <span class="navbar-text bg-light">
+                    copyright reserved
+                </span>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+
+    </section>
+    <main>
+        <form class="row g-3 bg-light opacity-75">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputname4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Tucumán 2345">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Consulta</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Cual es su mensaje...">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Estado</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elegir...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-secondary">Enviar</button>
+            </div>
+          </form>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title bg-light">INSTAGRAM</h5>
+                  <p class="card-text bg-light">Follow us.</p>
+                  <a href="https://www.instagram.com/royalblooduk/?hl=es" target="_blank" class="btn btn-secondary">Go to our Instagram!</a>
                 </div>
-            </main>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title bg-light">FACEBOOK</h5>
+                  <p class="card-text bg-light">Follow us.</p>
+                  <a href="https://es-la.facebook.com/RoyalBloodUK" target="_blank" class="btn btn-secondary">Go to our Facebook!</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="item3C">
-            <footer>
-                <section>
-                    <a href="https://www.instagram.com/royalblooduk/?hl=es" target="_blank"><img class="miniRedes" src="https://thumbs.dreamstime.com/b/icono-del-logotipo-de-instagram-rellenado-en-blanco-y-negro-con-esquinas-redondeadas-alta-resolución-para-uso-web-o-impresión-199612618.jpg" alt="instagram icon"></a>
-                    <a href="https://es-la.facebook.com/RoyalBloodUK" target="_blank"><img class="miniRedes" src="https://i.pinimg.com/736x/26/44/71/2644715e522b51c640dc1d31db1cee4c.jpg" alt="facebook icon"></a>
-                    <h2 class="copyright"> COPYRIGHT 2022 RESERVED</h2>
-                </section>
-            </footer>
-        </div>
-    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://images7.alphacoders.com/114/1146449.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(104, 55, 149);
+}
+
+footer {
+    padding: 5px;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .miniRedes {
+    width: auto;
+    height: auto;
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 20%;
+}
+
+footer .copyright {
+    background-color: rgb(40, 19, 61);
+    border-color: rgb(77, 28, 123);
+    border-radius: 10px;
+    color: rgb(177, 80, 171);
+}
+
+/* DIV PADRE INDEX */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-template-rows: min-content;
+    grid-template-areas: 
+    "header header header"
+    "video video redes"
+    "footer footer footer";
+}
+
+/* DIV HIJOS INDEX */
+
+.item1{
+    grid-area: header;
+    background-color: none;
+}
+.item2{
+    grid-area: video;
+    background-color: none;
+    justify-content: center;
+    padding: 75px;
+}
+.item3{
+    grid-area: footer;
+    background-color: none;
+}
+
+/* DIV PADRE CONTACT */
+
+.gridContainerC {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: min-content;
+    grid-template-areas: 
+    "headerC headerC headerC"
+    "form ... ..."
+    "footerC footerC footerC";
+}
+
+
+/* DIV HIJOS CONTACT */
+
+.item1C {
+    grid-area: headerC;
+}
+.item2C {
+    grid-area: form;
+}
+.item3C {
+    grid-area: footerC;
+}
+
+/* DIV PADRE TOUR */
+
+.gridContainerT {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content;
+    grid-template-areas: 
+    "headerT headerT"
+    "mainT mainT"
+    "footerT footerT";
+}
+
+/* DIV HIJOS TOUR */
+
+.item1T {
+    grid-area: headerT;
+    background-color: none;
+}
+
+.item2T {
+    grid-area: mainT;
+    background-color: none;
+}
+
+.item3T {
+    grid-area: footerT;
+    background-color: none;
+}
+
+/* CONTACT FORM */
+
+.containerForm {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    background-color: rgb(235, 221, 245);
+    border-radius: 7px;
+}
+
+.containerForm h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.containerForm p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.containerForm a {
+    font-size: 17px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: rgb(39, 10, 67);
+    font-weight: 700;
+}
+
+.containerForm a i {
+    color: rgb(182, 34, 212);
+    margin-right: 10px;
+}
+
+.containerForm form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid purple;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    outline: 0;
+}
+
+.containerForm form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.containerForm .btnEnviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    outline: 0;
+    background-color: rgb(138, 20, 159);
+    color: #fff;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.containerForm .btnEnviar:hover {
+    transform: translateY(-3%);
+}
+
+/* MENÚ */
+
+.menu {
+    margin: 10px;
+    list-style-type: none;
+    background-color: rgb(29, 9, 40);
+    text-align: center;
+}
+    
+.menu li {
+    display: inline-block;
+    margin: 5px;
+    text-transform: uppercase;
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px;
+    background-color: rgb(59, 18, 97);
+}
+    
+.menu li a {
+    text-decoration: none;
+    color: rgb(217, 201, 231);
+}
+    
+.menu li a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+/* TOUR */
+
+.tour {
+    background-color: rgb(223, 207, 238);
+    max-width: 550px;
+    max-height: 1000px;
+    min-height: 500px;
+    border: 3px solid purple;
+    border-radius: 10px;
+    margin: 30px;
+    cursor: default;
+}
+
+.tourText {
+    margin: 13px;
+    padding: 3px;
+}
+
+.tourText h5 {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tourText p {
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+/* LETRAS Y FUENTES */
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(77, 32, 90);
+}
+
+h2 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(77, 32, 90);
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(77, 32, 90);
+    padding: 14px;
+}
+
+@media all and (max-width: 600px){
+    main{
+        grid-column: 1 / span 2;
+        max-width: 450px;
+    }
+    header, footer{
+        grid-column: 1 / 4;
+    }
+}
+
